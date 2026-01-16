@@ -6,10 +6,15 @@ body {
 .card {
   width: 320px;
   margin: 50px auto;
-  background: white;
+  background: rgb(206, 206, 206);
   padding: 20px;
   border-radius: 12px;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0,15);
+  transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: scale(1.03);
 }
 
 img {
@@ -43,5 +48,5 @@ button:hover {
 }
 
 #error {
-  color: red;
+  color: oklch(51.898% 0.20743 28.648);
 }
